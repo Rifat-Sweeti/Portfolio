@@ -1,102 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-        <title>Portfolio</title>
-    </head>
-    <body>
-        <button class="theme-toggle" id="theme-toggle">Toggle Theme</button>
-        
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Rifat Fatima</a>
-                </div>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+<body>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Rifat</span><br> Web Designer</h1>
-                    <a href="#" class="button">Contact</a>
-                </div>
-                <div class="home__social">
-                    <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="50" y="60" href="./Image/9b9481116df606f11f4756919897d91a-removebg-preview.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">Rifat</div>
+  </header>
 
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="./Image/20191225_150838.jpg" alt="">
-                    </div>
-                    <div>
-                        <h2 class="about__subtitle">I'am Rifat</h2>
-                        <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum expedita quo culpa tempora, assumenda, quis fugiat ut voluptates soluta, aut earum nemo recusandae cumque perferendis! Recusandae alias accusamus atque.</p>           
-                    </div>                                   
-                </div>
-            </section>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="text-content">
+      <h2>HI, I'M A DEVELOPER</h2>
+      <h1><span class="dynamic-title"></span></h1>
+      <p>based in Karachi, PAKISTAN.</p>
+      <div class="buttons">
+        <a href="#" class="btn-primary">View My Works</a>
+        <a href="#" class="btn-secondary">Contact Me <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="image-content">
+      <img src="./Image/20191225_150838.jpg" alt="Profile Picture" class="profile-pic">
+    </div>
+  </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
+  <section id="about-me" class="about-section">
+    <div class="container">
+      <div class="about-header">
+        <h2>Know Me More</h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Hi, I'm <span class="highlight">Rifat Fatima</span></h3>
+          <p>
+            I'm a designer & developer with a passion for web design. I enjoy developing simple, clean, and slick
+            websites that provide real value to the end user. Thousands of clients have procured exceptional results
+            while working with me. Delivering work within time and budget, which meets clients' requirements, is our
+            motto.
+          </p>
+          <div class="personal-info">
+            <p><strong>Name:</strong> Rifat Fatiama</p>
+            <p><strong>Email:</strong> rifatfatima1444@gmail.com</p>
+            <p><strong>Date of birth:</strong> 6 April, 2011</p>
+            <p><strong>From:</strong> Karachi, Pakistan</p>
+          </div>
+        </div>
+        <div class="experience-block">
+          <div class="experience-number">
+            <h1 id="experience-count">0</h1>
+            <p>Years of <b>Experience</b></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Rifat</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-            </div>
-            <p>&#169; 2020 copyright all right reserved</p>
-        </footer>
-        
-        <script src="index.js"></script>
-    </body>
+  <section id="what-i-do">
+    <div class="container">
+      <div class="section-title">
+        <span class="highlight-text">What I Do</span>
+        <h2>How I can help your next project</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-box">
+          <div class="icon">
+            <i class="fa fa-paint-brush"></i>
+          </div>
+          <h3>Graphic Design</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="service-box">
+          <div class="icon">
+            <i class="fa fa-desktop"></i>
+          </div>
+          <h3>Web Design</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="service-box">
+          <div class="icon">
+            <i class="fa fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="resume-section">
+    <div class="resume-heading">
+      <h2 class="highlight-text">Resume</h2>
+      <p>A summary of My Resume</p>
+    </div>
+    <div class="resume-content">
+      <div class="education">
+        <h3>My Education</h3>
+        <div class="edu-entry">
+          <h4>Studying Computer Engineering</h4>
+          <span>Aga Khan School</span>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="edu-entry">
+          <h4>Student of Grade 8</h4>
+          <span>Aga Khan School</span>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+      <div class="experience">
+        <h3>My Experience</h3>
+        <div class="exp-entry">
+          <h4>Front End Developer</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="exp-entry">
+          <h4>Learning Front End Developer</h4>
+          <span>SMIT / 2023 - 2024</span>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="exp-entry">
+          <h4>HTML Developer</h4>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+      <div class="skill">
+        <span>HTML/CSS</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>95%</span>
+        <div class="bar">
+          <div class="progress" style="width: 95%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>80%</span>
+        <div class="bar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Bootstrap</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span>88%</span>
+        <div class="bar">
+          <div class="progress" style="width: 88%;"></div>
+        </div>
+      </div>
+    </div>
+    <a href="./Image/Resume  Rifat Fatima (2).docx" download class="download-button">Download CV</a>
+  </section>
+
+  <section id="portfolio">
+    <h2 style="text-align: center;">Portfolio</h2>
+    <p style="text-align: center;">Some of my most recent projects</p>
+    <div class="portfolio-filters" style="text-align: center;">
+      <button>All</button>
+    </div>
+
+    <div class="portfolio-items">
+      <div class="portfolio-item">
+        <img src="./Image/download.png" alt="Login Form">
+        <h3>Login Form</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="./Image/download (1).png" alt="Age Calculator">
+        <h3>Age Calculator</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="./Image/download (3).png" alt="Word Counter">
+        <h3>Word Counter</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="./Image/download (2).png" alt="Ramzan Countdown">
+        <h3>Ramzan Countdown</h3>
+      </div>
+      <div class="portfolio-item">
+        <img src="./Image/download (4).png" alt="Website">
+        <h3>Website</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div>
+      <h2>Interested in working with me?</h2>
+      <button>Hire Me</button>
+    </div>
+  </section>
+
+  <section id="client-speak">
+    <h2>What Clients Say</h2>
+    <div class="client-cards">
+      <div class="client-card">
+        <div class="rating">
+          ★★★★☆
+        </div>
+        <p>"Amazing experience working with Rifat. Highly recommended!"</p>
+        <h4>Chris Tom</h4>
+      </div>
+      <div class="client-card">
+        <div class="rating">
+          ★★★★★
+        </div>
+        <p>"Exceptional work! Rifat delivered beyond my expectations."</p>
+        <h4>Patrick Cary</h4>
+      </div>
+      <div class="client-card">
+        <div class="rating">
+          ★★★☆☆
+        </div>
+        <p>"Good work but there were some delays in delivery."</p>
+        <h4>Dennis</h4>
+      </div>
+      <div class="client-card">
+        <div class="rating">
+          ★★★★★
+        </div>
+        <p>"Professional and very responsive throughout the project."</p>
+        <h4>Jay Shah</h4>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <h2>Let's get in touch</h2>
+        <p>I enjoy discussing new projects and design challenges. Please share as much info as possible so we can get
+          the most out of our first catch-up.</p>
+        <div class="contact-info">
+          <p>Living In: 30 Shacham street, Los Angeles, USA.</p>
+          <p>Call: (+060) 444 434 444</p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <h3>Estimate your Project?</h3>
+        <form class="estimate-form">
+          <input type="text" name="name" placeholder="What is Your Name:" required>
+          <input type="email" name="email" placeholder="Your Email Address:" required>
+          <textarea name="message" placeholder="How can I Help you?" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2021 Callum. All Rights Reserved.</p>
+      <p>Designed by Rifat Fatima</p>
+    </div>
+  </footer>
+
+  <!-- Scroll Arrow -->
+  <div class="scroll-arrow" onclick="scrollToTop()">
+    <i class="fas fa-chevron-up"></i>
+  </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
